@@ -1,0 +1,41 @@
+# General site settings
+title: Orchid Ghar
+description: Orchid Ghar is your premier destination for a wide variety of high-quality flowers and plants. We specialize in exotic orchids, gadavari, lallupatey, and more, bringing nature's beauty to your home or office. Whether you're looking to add a touch of elegance with vibrant orchids or enhance your space with other beautiful plants, we offer a diverse selection to suit every need. Visit us for the freshest blooms and expert care for all your floral needs.
+url: "https://orchidghar.github.io/orchidghar/"
+baseurl: "" # optional, used for site deployed in a subdirectory
+
+# Author settings
+author:
+  name: Sulochan Thapa
+  email: orchidghar@gmail.com
+
+# Social links
+social:
+  github: https://github.com/orchidghar
+
+# Markdown settings
+markdown: kramdown
+
+# Theme settings (if using a theme)
+# theme: minimal
+
+# Plugins (if applicable)
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Build settings
+exclude:
+  - "README.md"   # Exclude files/folders from the build
+  - "LICENSE"
+
+# Analytics settings (for Google Analytics or others)
+google_analytics: UA-XXXXX-X
+
+# Permalink settings (for post URLs)
+permalink: /:year/:month/:day/:title/
+
+# RSS feed settings
+feed:
+  path: "feed.xml"
+  limit: 10

@@ -17,7 +17,7 @@ social:
 markdown: kramdown
 
 # Theme settings (if using a theme)
-# theme: minimal
+#theme: minimal
 
 # Plugins (if applicable)
 plugins:

@@ -1,17 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Orchid Ghar offers premium exotic orchids, flowers, and plants with flower delivery services across India. Located in Darjeeling, India.">
-    <meta name="keywords" content="orchid flowers, orchid delivery, flower delivery, exotic orchids, orchids India">
-    <meta name="author" content="Pranay Rai">
-    <title>Orchid Ghar - Premium Orchids & Flower Delivery</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.0/dist/tailwind.min.css" rel="stylesheet">
-  </head>
-  <body>
-    <!-- Header -->
-    {% include header.html %}
+---
+layout: default
+title: "Orchid Ghar - Premium Orchids & Flower Delivery"
+---
+
 
     <!-- Hero Section -->
     <section class="hero bg-green-500 text-white text-center py-20">
@@ -34,15 +25,10 @@
       <div class="container mx-auto text-center">
         <h2 class="text-3xl mb-6">Our Orchid Collection</h2>
         <div class="grid grid-cols-3 gap-6">
-          <div><img src="assets/images/orchid1.jpg" alt="Exotic Orchid" class="rounded-lg shadow-lg w-full h-full object-cover"></div>
-          <div><img src="assets/images/orchid2.jpg" alt="Lallupatey Orchid" class="rounded-lg shadow-lg w-full h-full object-cover"></div>
-          <div><img src="assets/images/orchid3.jpg" alt="Gadavari Orchid" class="rounded-lg shadow-lg w-full h-full object-cover"></div>
+          <div><img src="blob/main/assets/images/orchid1.jpg" alt="Exotic Orchid" class="rounded-lg shadow-lg w-full h-full object-cover"></div>
+          <div><img src="blob/main/assets/images/orchid2.jpg" alt="Lallupatey Orchid" class="rounded-lg shadow-lg w-full h-full object-cover"></div>
+          <div><img src="blob/main/assets/images/orchid3.jpg" alt="Gadavari Orchid" class="rounded-lg shadow-lg w-full h-full object-cover"></div>
         </div>
         <a href="gallery.html" class="mt-6 bg-yellow-500 text-black py-2 px-6 rounded-lg text-xl hover:bg-yellow-600 transition">View Full Gallery</a>
       </div>
     </section>
-
-    <!-- Footer -->
-    {% include footer.html %}
-  </body>
-</html>

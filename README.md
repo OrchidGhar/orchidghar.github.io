@@ -47,7 +47,7 @@ git push origin main
 - 🏷️ **Optimized headings & content** for search engines
 
 ## Contact
-For inquiries or custom orders, visit the **[Contact Us](#)** page or email at **orchidghar@example.com**.
+For inquiries or custom orders, visit the **[Contact Us](#)** page or email at **orchidghar@gmail.com**.
 
 ---
 🌸 **Orchid Ghar - Bringing Nature's Beauty to Your Home** 🌸

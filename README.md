@@ -1,59 +1,54 @@
-<header>
+# Orchid Ghar
 
-<!--
-  <<< Author notes: Course header >>>
-  Include a 1280×640 image, course title in sentence case, and a concise description in emphasis.
-  In your repository settings: enable template repository, add your 1280×640 social image, auto delete head branches.
-  Add your open source license, GitHub uses MIT license.
--->
+## Overview
+Orchid Ghar is an online platform dedicated to showcasing and selling exotic flowers, including orchids, gadavari, and lallupatey. Based in **Rongmook Ceder T.E, Sonada, District- Darjeeling, India**, Orchid Ghar offers flower delivery services across India.
 
-# GitHub Pages
+## Features
+- 🌿 **Beautiful, SEO-Optimized Multi-Page Website**
+- 📱 **Responsive Design** using **Tailwind CSS / Bootstrap**
+- 🖼️ **Gallery Page** with dynamically loaded images
+- 🚚 **Services Page** listing all available flower delivery options
+- 📩 **Contact Page** with an inquiry form
+- 🚀 **GitHub Pages Deployment** for free hosting
 
-_Create a site or blog from your GitHub repositories with GitHub Pages._
+## Installation & Setup
+### Clone the Repository
+```bash
+git clone https://github.com/your-username/OrchidGhar.git
+cd OrchidGhar
+```
 
-</header>
+### Open in VSCode
+```bash
+code .
+```
 
-<!--
-  <<< Author notes: Step 2 >>>
-  Start this step by acknowledging the previous step.
-  Define terms and link to docs.github.com.
-  Historic note: previous version checked for empty pull request, changed to the correct theme `minima`.
--->
+### Run Locally (if using a local server)
+```bash
+npx live-server
+```
 
-## Step 2: Configure your site
+## Deployment on GitHub Pages
+### Commit and Push Changes
+```bash
+git add .
+git commit -m "Updated website content"
+git push origin main
+```
 
-_You turned on GitHub Pages! :tada:_
+### Enable GitHub Pages
+1. Go to **Settings > Pages** in the GitHub repository.
+2. Select **Branch: main** and save.
 
-We'll work in a branch, `my-pages`, that I created for you to get this site looking great. :sparkle:
+## SEO Optimization
+- 🔍 **Meta tags** for better search engine visibility
+- 🖼️ **Alt text** for images
+- 📱 **Mobile-friendly design** for improved ranking
+- 🏷️ **Optimized headings & content** for search engines
 
-Jekyll uses a file titled `_config.yml` to store settings for your site, your theme, and reusable content like your site title and GitHub handle. You can check out the `_config.yml` file on the **Code** tab of your repository.
-
-We need to use a blog-ready theme. For this activity, we will use a theme named "minima".
-
-### :keyboard: Activity: Configure your site
-
-1. Browse to the `_config.yml` file in the `my-pages` branch.
-1. In the upper right corner, open the file editor.
-1. Add a `theme:` set to **minima** so it shows in the `_config.yml` file as below:
-   ```yml
-   theme: minima
-   ```
-1. (optional) You can modify the other configuration variables such as `title:`, `author:`, and `description:` to further customize your site.
-1. Commit your changes.
-1. (optional) Create a pull request to view all the changes you'll make throughout this course. Click the **Pull Requests** tab, click **New pull request**, set `base: main` and `compare:my-pages`.
-1. Wait about 20 seconds then refresh this page (the one you're following instructions from). [GitHub Actions](https://docs.github.com/en/actions) will automatically update to the next step.
-
-<footer>
-
-<!--
-  <<< Author notes: Footer >>>
-  Add a link to get support, GitHub status page, code of conduct, license link.
--->
+## Contact
+For inquiries or custom orders, visit the **[Contact Us](#)** page or email at **orchidghar@gmail.com**.
 
 ---
+🌸 **Orchid Ghar - Bringing Nature's Beauty to Your Home** 🌸
 
-Get help: [Post in our discussion board](https://github.com/orgs/skills/discussions/categories/github-pages) &bull; [Review the GitHub status page](https://www.githubstatus.com/)
-
-&copy; 2023 GitHub &bull; [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [MIT License](https://gh.io/mit)
-
-</footer>

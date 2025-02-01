@@ -1,7 +1,7 @@
 # General site settings
 title: Orchid Ghar
 description: Orchid Ghar is your premier destination for a wide variety of high-quality flowers and plants. We specialize in exotic orchids, gadavari, lallupatey, and more, bringing nature's beauty to your home or office. Whether you're looking to add a touch of elegance with vibrant orchids or enhance your space with other beautiful plants, we offer a diverse selection to suit every need. Visit us for the freshest blooms and expert care for all your floral needs.
-url: "https://orchidghar.github.io/orchidghar/"
+url: "https://orchidghar.github.io/"
 baseurl: "https://orchidghar.github.io/orchidghar/" # optional, used for site deployed in a subdirectory
 
 # Author settings

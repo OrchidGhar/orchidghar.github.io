@@ -3,6 +3,43 @@ layout: default
 title: "Orchid Ghar - Premium Orchids & Flower Delivery"
 ---
 
+<!-- Hero Section with Carousel -->
+<section class="hero bg-green-500 text-white text-center py-20 relative">
+  <!-- Carousel Container -->
+  <div class="carousel relative w-full h-96">
+    <!-- Carousel Items -->
+    <div class="carousel-inner w-full h-full overflow-hidden">
+      <div class="carousel-item w-full h-full flex justify-center items-center opacity-0 transition-opacity duration-700 ease-in-out">
+        <img src="{{ site.baseurl }}assets/images/Orchid1.jpg" alt="Orchid 1" class="object-cover w-full h-full rounded-xl">
+      </div>
+      <div class="carousel-item w-full h-full flex justify-center items-center opacity-0 transition-opacity duration-700 ease-in-out">
+        <img src="{{ site.baseurl }}assets/images/Orchid2.jpg" alt="Orchid 2" class="object-cover w-full h-full rounded-xl">
+      </div>
+      <div class="carousel-item w-full h-full flex justify-center items-center opacity-0 transition-opacity duration-700 ease-in-out">
+        <img src="{{ site.baseurl }}assets/images/Orchid3.jpg" alt="Orchid 3" class="object-cover w-full h-full rounded-xl">
+      </div>
+    </div>
+    <!-- Carousel Controls -->
+    <button class="carousel-control-prev absolute top-1/2 left-2 transform -translate-y-1/2 text-white bg-black bg-opacity-50 p-4 rounded-full hover:bg-opacity-75 transition duration-200">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+      </svg>
+    </button>
+    <button class="carousel-control-next absolute top-1/2 right-2 transform -translate-y-1/2 text-white bg-black bg-opacity-50 p-4 rounded-full hover:bg-opacity-75 transition duration-200">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+      </svg>
+    </button>
+  </div>
+  <!-- Hero Content -->
+  <div class="z-10 relative">
+    <h1 class="text-5xl font-bold animate__animated animate__fadeIn">Welcome to Orchid Ghar</h1>
+    <p class="mt-4 text-lg animate__animated animate__fadeIn animate__delay-1s">Exotic orchids and premium flowers delivered across India.</p>
+    <div class="mt-6">
+      <a href="{{ site.baseurl }}/services" class="bg-yellow-500 text-black py-2 px-6 rounded-lg text-xl hover:bg-yellow-600 transition">Explore Our Services</a>
+    </div>
+  </div>
+</section>
 
     <!-- Hero Section -->
     <section class="hero bg-green-500 text-white text-center py-20">

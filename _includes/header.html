@@ -37,7 +37,14 @@
         <div class="relative px-4 sm:px-8 lg:px-12">
           <div class="mx-auto max-w-2xl lg:max-w-5xl">
             <div class="relative flex gap-4">
-              <div class="flex flex-1"></div>
+              <div class="flex justify-start flex-1">
+                <a href="{{ site.baseurl }}" class="flex items-center">
+                    <img
+                      src="{{ site.baseurl }}/assets/images/og-logo.png"
+                      alt="Orchid Ghar Logo"
+                      class="h-14 w-14 mr-2"
+                    />
+              </div>
               <div class="flex flex-1 justify-end md:justify-center">
                 <div
                   class="pointer-events-auto md:hidden"
@@ -89,36 +96,29 @@
                     <li>
                       <a
                         class="relative block px-3 py-2 transition hover:text-teal-500 dark:hover:text-teal-400"
-                        href="/about"
-                        >About</a
+                        href="{{ site.baseurl }}"
+                        >Home</a
                       >
                     </li>
                     <li>
                       <a
                         class="relative block px-3 py-2 transition hover:text-teal-500 dark:hover:text-teal-400"
-                        href="/articles"
-                        >Articles</a
+                        href="{{ site.baseurl }}services"
+                        >Services</a
                       >
                     </li>
                     <li>
                       <a
                         class="relative block px-3 py-2 transition hover:text-teal-500 dark:hover:text-teal-400"
-                        href="/projects"
+                        href="{{ site.baseurl }}gallery"
                         >Projects</a
                       >
                     </li>
                     <li>
                       <a
                         class="relative block px-3 py-2 transition hover:text-teal-500 dark:hover:text-teal-400"
-                        href="/speaking"
-                        >Speaking</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        class="relative block px-3 py-2 transition hover:text-teal-500 dark:hover:text-teal-400"
-                        href="/uses"
-                        >Uses</a
+                        href="{{ site.baseurl }}contact"
+                        >Contact-us</a
                       >
                     </li>
                   </ul>
@@ -165,89 +165,6 @@
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</header>
-<header
-  class="bg-green-600 text-white fixed top-0 left-0 w-full z-50 shadow-lg"
->
-  <div class="container mx-auto flex items-center justify-between py-4 px-6">
-    <!-- Logo -->
-    <a href="{{ site.baseurl }}" class="flex items-center">
-      <img
-        src="{{ site.baseurl }}/assets/images/og-logo.png"
-        alt="Orchid Ghar Logo"
-        class="h-14 w-14 mr-2"
-      />
-      <span class="text-2xl font-bold">Orchid Ghar</span>
-    </a>
-
-    <!-- Desktop Navigation -->
-    <nav class="hidden md:flex space-x-8">
-      <a
-        href="{{ site.baseurl }}"
-        class="hover:text-yellow-400 transition duration-300"
-        >Home</a
-      >
-      <a
-        href="{{ site.baseurl }}/services"
-        class="hover:text-yellow-400 transition duration-300"
-        >Services</a
-      >
-      <a
-        href="{{ site.baseurl }}/gallery"
-        class="hover:text-yellow-400 transition duration-300"
-        >Gallery</a
-      >
-      <a
-        href="{{ site.baseurl }}/contact"
-        class="hover:text-yellow-400 transition duration-300"
-        >Contact Us</a
-      >
-    </nav>
-
-    <!-- Mobile Menu Button -->
-    <button id="mobile-menu-btn" class="md:hidden focus:outline-none">
-      <svg
-        class="w-8 h-8 text-white"
-        fill="none"
-        stroke="currentColor"
-        stroke-width="2"
-        viewBox="0 0 24 24"
-      >
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          d="M4 6h16M4 12h16m-7 6h7"
-        ></path>
-      </svg>
-    </button>
-
-    <!-- Mobile Menu -->
-    <div
-      id="mobile-menu"
-      class="absolute top-16 left-0 w-full bg-green-700 hidden flex flex-col space-y-4 py-4 text-center shadow-md"
-    >
-      <a
-        href="{{ site.baseurl }}"
-        class="block py-2 hover:bg-green-500 transition"
-        >Home</a
-      >
-      <a
-        href="{{ site.baseurl }}/services"
-        class="block py-2 hover:bg-green-500 transition"
-        >Services</a
-      >
-      <a
-        href="{{ site.baseurl }}/gallery"
-        class="block py-2 hover:bg-green-500 transition"
-        >Gallery</a
-      >
-      <a
-        href="{{ site.baseurl }}/contact"
-        class="block py-2 hover:bg-green-500 transition"
-        >Contact Us</a
-      >
     </div>
   </div>
 </header>

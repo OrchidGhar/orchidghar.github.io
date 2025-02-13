@@ -33,7 +33,7 @@ exclude:
 # google_analytics: UA-XXXXX-X
 
 # Permalink settings (for post URLs)
-permalink: /blog/:title/
+permalink: /orchidghar/blog/:title/
 # permalink: /:year/:month/:day/:title/
 
 # RSS feed settings

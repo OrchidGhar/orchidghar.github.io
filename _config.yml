@@ -5,10 +5,10 @@ url: "https://orchidghar.github.io/"
 baseurl: "https://orchidghar.github.io/orchidghar/" # optional, used for site deployed in a subdirectory
 
 defaults:
-  # - scope:
-  #     path: "sitemap.xml"
-  #   values:
-  #     layout: "none"
+  - scope:
+      path: "sitemap.xml"
+    values:
+      layout: "none"
   - scope:
       path: "thankyou"
     values:

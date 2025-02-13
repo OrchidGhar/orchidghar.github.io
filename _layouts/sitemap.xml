@@ -21,7 +21,6 @@ permalink: /sitemap.xml
     <priority>0.8</priority>
   </url>
   {% endfor %}
-
   <!-- Pages -->
   {% for page in site.pages %}
   {% if page.url != "/404.html" and page.sitemap != false %}

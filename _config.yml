@@ -9,6 +9,14 @@ defaults:
       path: "sitemap.xml"
     values:
       layout: "none"
+  - scope:
+      path: "thankyou"
+    values:
+      sitemap: "false"
+  - scope:
+      path: "googlebfdf74e9e9477ded.html"
+    values:
+      sitemap: "false"
 
 # Author settings
 author:

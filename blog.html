@@ -16,7 +16,7 @@ permalink: /blog/
             </h2>
             <p class="text-gray-500 text-sm">Published on {{ post.date | date: "%B %d, %Y" }} by {{ post.author }}</p>
             <p class="mt-4 text-gray-700">{{ post.excerpt | strip_html }}...</p>
-            <a href="{{ post.url | relative_url }}" class="mt-2 inline-block text-blue-600 font-semibold hover:underline">Read more →</a>
+            <a href="{{relative_url }}" class="mt-2 inline-block text-blue-600 font-semibold hover:underline">Read more →</a>
         </article>
         {% endfor %}
     </div>

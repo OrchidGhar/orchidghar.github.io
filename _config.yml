@@ -34,7 +34,7 @@ exclude:
 
 # Permalink settings (for post URLs)
 permalink: /blog/:title/
-permalink: /:year/:month/:day/:title/
+# permalink: /:year/:month/:day/:title/
 
 # RSS feed settings
 feed:

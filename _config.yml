@@ -21,9 +21,7 @@ defaults:
       sitemap: "false"
 
 # Author settings
-author:
-  name: Sulochan Thapa
-  email: orchidghar@gmail.com
+author: "Orchid Ghar"
 
 # Social links
 social:

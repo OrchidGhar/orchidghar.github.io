@@ -1,44 +1,71 @@
-<header class="relative z-50 flex flex-none flex-col bg-white shadow-md dark:bg-zinc-900">
-  <div class="top-0 z-10 h-16 flex items-center justify-between px-4 md:px-8">
-    <!-- Logo Section -->
-    <a href="{{ site.baseurl }}" class="flex items-center">
-      <img src="{{ site.baseurl }}/assets/images/og-logo.png" alt="Orchid Ghar Logo" class="h-14 w-14 mr-2" />
-      <div class="flex flex-col">
-        <div class="text-sm italic">Pranay Rai's</div>
-        <div class="text-lg leading-none font-bold">Orchid Ghar</div>
+<header class="pointer-events-none relative z-50 flex flex-none flex-col"
+  style="height: var(--header-height); margin-bottom: var(--header-mb)">
+  <div class="order-last mt-[calc(--spacing(16)-(--spacing(3)))]"></div>
+  <div class="sm:px-8 top-0 order-last -mb-3 pt-3" style="position: var(--header-position)">
+    <div class="mx-auto w-full max-w-7xl lg:px-8">
+      <div class="relative px-4 sm:px-8 lg:px-12">
+        <div class="mx-auto max-w-2xl lg:max-w-5xl">
+          <div class="top-(--avatar-top,--spacing(3)) w-full" style="position: var(--header-inner-position)">
+            <div class="relative">
+              <div class="absolute top-3 left-0 origin-left transition-opacity h-10 w-10 rounded-full bg-white/90 p-0.5 ring-1 shadow-lg shadow-zinc-800/5 ring-zinc-900/5 backdrop-blur-sm dark:bg-zinc-800/90 dark:ring-white/10"></div>
+            </div>
+          </div>
+        </div>
       </div>
-    </a>
-
-    <!-- Mobile Menu Button -->
-    <button id="menuToggle" class="md:hidden p-2 text-gray-800 dark:text-gray-200">
-      ☰
-    </button>
-
-    <!-- Desktop Navigation -->
-    <nav class="hidden md:block">
-      <ul class="flex space-x-4 text-sm font-medium">
-        <li><a href="{{ site.baseurl }}" class="px-3 py-2 hover:text-teal-500">Home</a></li>
-        <li><a href="{{ site.baseurl }}blog/" class="px-3 py-2 hover:text-teal-500">Blog</a></li>
-        <li><a href="{{ site.baseurl }}services" class="px-3 py-2 hover:text-teal-500">Services</a></li>
-        <li><a href="{{ site.baseurl }}gallery" class="px-3 py-2 hover:text-teal-500">Gallery</a></li>
-        <li><a href="{{ site.baseurl }}contact" class="px-3 py-2 hover:text-teal-500">Contact</a></li>
-      </ul>
-    </nav>
-  </div>
-
-  <!-- Mobile Slide-in Menu -->
-  <nav id="mobileMenu" class="fixed inset-0 z-40 bg-black bg-opacity-50 hidden">
-    <div class="w-64 h-full bg-white dark:bg-zinc-800 shadow-lg transform translate-x-[-100%] transition-transform duration-300 ease-in-out p-6">
-      <button id="closeMenu" class="absolute top-4 right-4 text-gray-800 dark:text-gray-200">
-        ✖
-      </button>
-      <ul class="space-y-4 text-lg font-medium">
-        <li><a href="{{ site.baseurl }}" class="block p-2 hover:text-teal-500">Home</a></li>
-        <li><a href="{{ site.baseurl }}blog/" class="block p-2 hover:text-teal-500">Blog</a></li>
-        <li><a href="{{ site.baseurl }}services" class="block p-2 hover:text-teal-500">Services</a></li>
-        <li><a href="{{ site.baseurl }}gallery" class="block p-2 hover:text-teal-500">Gallery</a></li>
-        <li><a href="{{ site.baseurl }}contact" class="block p-2 hover:text-teal-500">Contact</a></li>
-      </ul>
     </div>
-  </nav>
+  </div>
+  <div class="top-0 z-10 h-16 pt-6" style="position: var(--header-position)">
+    <div class="sm:px-8 top-(--header-top,--spacing(6)) w-full" style="position: var(--header-inner-position)">
+      <div class="mx-auto w-full max-w-7xl lg:px-8">
+        <div class="relative px-4 sm:px-8 lg:px-12">
+          <div class="mx-auto max-w-2xl lg:max-w-5xl">
+            <div class="relative flex gap-4">
+              <!-- Logo Section -->
+              <div class="flex justify-start flex-1">
+                <a href="{{ site.baseurl }}" class="flex items-center">
+                    <img src="{{ site.baseurl }}/assets/images/og-logo.png" alt="Orchid Ghar Logo" class="h-14 w-14 mr-2" />
+                    <div class="flex flex-col">
+                      <div class="text-sm italic">Pranay Rai's</div>
+                      <div class="text-lg leading-none">Orchid Ghar</div>
+                    </div>
+                </a>
+              </div>
+              <!-- Mobile Menu Button -->
+              <div class="flex flex-1 justify-end md:hidden">
+                <button id="menuButton" class="group flex items-center rounded-full bg-white/90 px-4 py-2 text-sm font-medium text-zinc-800 ring-1 shadow-lg shadow-zinc-800/5 ring-zinc-900/5 backdrop-blur-sm dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10 dark:hover:ring-white/20">
+                  Menu <svg viewBox="0 0 8 6" aria-hidden="true" class="ml-3 h-auto w-2 stroke-zinc-500 group-hover:stroke-zinc-700 dark:group-hover:stroke-zinc-400">
+                    <path d="M1.75 1.75 4 4.25l2.25-2.5" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </button>
+              </div>
+              <!-- Desktop Menu -->
+              <nav class="pointer-events-auto hidden md:block">
+                <ul class="flex rounded-full bg-white/90 px-3 text-sm font-medium text-zinc-800 ring-1 shadow-lg shadow-zinc-800/5 ring-zinc-900/5 backdrop-blur-sm dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10">
+                  <li><a class="relative block px-3 py-2 transition hover:text-teal-500 dark:hover:text-teal-400" href="{{ site.baseurl }}">Home</a></li>
+                  <li><a class="relative block px-3 py-2 transition hover:text-teal-500 dark:hover:text-teal-400" href="{{ site.baseurl }}blog/">Blog</a></li>
+                  <li><a class="relative block px-3 py-2 transition hover:text-teal-500 dark:hover:text-teal-400" href="{{ site.baseurl }}services">Services</a></li>
+                  <li><a class="relative block px-3 py-2 transition hover:text-teal-500 dark:hover:text-teal-400" href="{{ site.baseurl }}gallery">Gallery</a></li>
+                  <li><a class="relative block px-3 py-2 transition hover:text-teal-500 dark:hover:text-teal-400" href="{{ site.baseurl }}contact">Contact</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </header>
+
+<!-- Mobile Side Menu -->
+<div id="mobileMenu" class="fixed inset-y-0 left-0 w-64 bg-white shadow-lg transform -translate-x-full transition-transform md:hidden">
+  <div class="p-4">
+    <button id="closeMenu" class="text-xl">&times;</button>
+    <ul class="mt-4 space-y-4">
+      <li><a href="{{ site.baseurl }}" class="block p-2 hover:text-teal-500">Home</a></li>
+      <li><a href="{{ site.baseurl }}blog/" class="block p-2 hover:text-teal-500">Blog</a></li>
+      <li><a href="{{ site.baseurl }}services" class="block p-2 hover:text-teal-500">Services</a></li>
+      <li><a href="{{ site.baseurl }}gallery" class="block p-2 hover:text-teal-500">Gallery</a></li>
+      <li><a href="{{ site.baseurl }}contact" class="block p-2 hover:text-teal-500">Contact</a></li>
+    </ul>
+  </div>
+</div>

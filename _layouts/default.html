@@ -23,5 +23,18 @@
     </main>
     
     {% include footer.html %}
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const menuButton = document.getElementById("headlessui-popover-button-:Rbmiqja:");
+          const mobileMenu = document.querySelector(".pointer-events-auto.md:hidden");
+      
+          if (menuButton && mobileMenu) {
+            menuButton.addEventListener("click", function () {
+              mobileMenu.classList.toggle("hidden");
+            });
+          }
+        });
+      </script>
+      
 </body>
 </html>

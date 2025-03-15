@@ -55,12 +55,13 @@
                   class="pointer-events-auto md:hidden"
                   data-headlessui-state=""
                 >
+                <!-- Mobile Menu Button -->
                   <button
                     class="group flex items-center rounded-full bg-white/90 px-4 py-2 text-sm font-medium text-zinc-800 ring-1 shadow-lg shadow-zinc-800/5 ring-zinc-900/5 backdrop-blur-sm dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10 dark:hover:ring-white/20"
                     type="button"
                     aria-expanded="false"
                     data-headlessui-state=""
-                    id="headlessui-popover-button-:Rbmiqja:"
+                    id="menuToggle"
                   >
                     Menu<svg
                       viewBox="0 0 8 6"
@@ -94,10 +95,7 @@
                     display: none;
                   "
                 ></div>
-                <!-- Mobile Menu Button -->
-    <button id="menuToggle" type="button" class="md:hidden p-2 text-gray-800 dark:text-gray-200">
-      ☰
-    </button>
+                
                 <nav class="pointer-events-auto hidden md:block">
                   <ul
                     class="flex rounded-full bg-white/90 px-3 text-sm font-medium text-zinc-800 ring-1 shadow-lg shadow-zinc-800/5 ring-zinc-900/5 backdrop-blur-sm dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10"
@@ -139,7 +137,7 @@
                   </ul>
                 </nav>
                  <!-- Mobile Slide-in Menu -->
-  <nav id="mobileMenu" class="fixed inset-0 z-40 bg-black bg-opacity-50 hidden">
+  <nav id="mobileMenu" class="pointer-events-auto fixed inset-0 z-40 bg-black bg-opacity-50 hidden">
     <div class="w-64 h-full bg-white dark:bg-zinc-800 shadow-lg transform translate-x-[-100%] transition-transform duration-300 ease-in-out p-6">
       <button id="closeMenu" class="absolute top-4 right-4 text-gray-800 dark:text-gray-200">
         ✖

@@ -49,8 +49,13 @@ exclude:
 
 # Permalink settings (for post URLs)
 permalink: blog/:title/
-# permalink: /:year/:month/:day/:title/
 
+# permalink: /:year/:month/:day/:title/
+# Collections settings (for post URLs)
+collections:
+  flowers:
+    output: true
+    permalink: /flower/:title/
 # RSS feed settings
 feed:
   path: "feed.xml"

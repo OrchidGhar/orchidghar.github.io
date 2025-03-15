@@ -121,26 +121,28 @@
                       >
                     </li>
                     <!-- Flowers Menu with Dropdown -->
-                  <li class="relative group">
-                    <a
-                      class="relative block px-3 py-2 transition hover:text-teal-500 dark:hover:text-teal-400 cursor-pointer"
-                    >
-                      Flowers ▾
-                    </a>
-                    <ul
-                      class="absolute left-0 mt-2 hidden w-48 bg-white shadow-lg rounded-lg text-zinc-800 group-hover:block"
-                    >
-                      <li>
-                        <a class="block px-4 py-2 hover:bg-gray-100" href="{{ site.baseurl }}flower/cymbidium-orchid">Cymbidium Orchid</a>
-                      </li>
-                      <li>
-                        <a class="block px-4 py-2 hover:bg-gray-100" href="{{ site.baseurl }}flower/chrysanthemum">Chrysanthemum</a>
-                      </li>
-                      <li>
-                        <a class="block px-4 py-2 hover:bg-gray-100" href="{{ site.baseurl }}flower/ranunculus">Ranunculus</a>
-                      </li>
-                    </ul>
-                  </li>
+                 <!-- Dropdown for Flowers -->
+    <li class="relative group">
+      <button id="flowersDropdownBtn" class="relative flex items-center px-3 py-2 transition hover:text-teal-500 dark:hover:text-teal-400 focus:outline-none">
+        Flowers
+        <svg class="ml-2 h-4 w-4 transform group-hover:rotate-180 transition-transform" viewBox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+        </svg>
+      </button>
+
+      <ul id="flowersDropdownMenu" class="absolute left-0 mt-2 w-48 bg-white border rounded-lg shadow-lg hidden group-hover:block">
+        <li>
+          <a href="{{ site.baseurl }}flower/cymbidium-orchid" class="block px-4 py-2 hover:bg-gray-100">Cymbidium Orchid</a>
+        </li>
+        <li>
+          <a href="{{ site.baseurl }}flower/chrysanthemum" class="block px-4 py-2 hover:bg-gray-100">Chrysanthemum</a>
+        </li>
+        <li>
+          <a href="{{ site.baseurl }}flower/ranunculus" class="block px-4 py-2 hover:bg-gray-100">Ranunculus</a>
+        </li>
+      </ul>
+    </li>
+
                     <li>
                       <a
                         class="relative block px-3 py-2 transition hover:text-teal-500 dark:hover:text-teal-400"

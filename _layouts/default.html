@@ -67,8 +67,36 @@
               dropdownMenu.classList.add("hidden");
             }
           });
+          const mobileMenu = document.getElementById("mobileMenu");
+            const mobileMenuBtn = document.getElementById("mobileMenuBtn");
+            const closeMobileMenu = document.getElementById("closeMobileMenu");
+            const mobileFlowersDropdownBtn = document.getElementById("mobileFlowersDropdownBtn");
+            const mobileFlowersDropdownMenu = document.getElementById("mobileFlowersDropdownMenu");
+            const mobileDropdownIcon = document.getElementById("mobileDropdownIcon");
+          
+            // Open Mobile Menu
+            mobileMenuBtn.addEventListener("click", function () {
+              mobileMenu.classList.remove("-translate-x-full");
+            });
+          
+            // Close Mobile Menu
+            closeMobileMenu.addEventListener("click", function () {
+              mobileMenu.classList.add("-translate-x-full");
+            });
+          
+            // Toggle Flowers Dropdown in Mobile Menu
+            mobileFlowersDropdownBtn.addEventListener("click", function () {
+              mobileFlowersDropdownMenu.classList.toggle("hidden");
+              mobileDropdownIcon.classList.toggle("rotate-180");
+            });
+          
+            // Close mobile menu when clicking outside
+            document.addEventListener("click", function (event) {
+              if (!mobileMenu.contains(event.target) && !mobileMenuBtn.contains(event.target)) {
+                mobileMenu.classList.add("-translate-x-full");
+              }
+            });
         });
         </script>
-        
 </body>
 </html>

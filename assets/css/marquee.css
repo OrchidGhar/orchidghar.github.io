@@ -1,7 +1,7 @@
 :root {
     --size: 6rem; /* Smaller images */
     --gap: 1rem;
-    --duration: 80s; /* Slower movement */
+    --duration: 60s; /* Slower movement */
   }
   
   .marquee-background {

@@ -1,4 +1,13 @@
-/* Optional: If you want to control opacity transition more effectively */
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1; /* Pushes the footer down */
+}
 .carousel-item {
     transition: opacity 0.5s ease-in-out;
   }

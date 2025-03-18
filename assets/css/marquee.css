@@ -1,19 +1,18 @@
 :root {
     --size: 6rem; /* Smaller images */
     --gap: 1rem;
-    --duration: 60s; /* Slower movement */
+    --duration: 80s; /* Slower movement */
   }
   
+  /* 🟢 Main Section with Marquee */
   .marquee-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1; /* Move to background */
+    position: relative;
+    height: 100vh;
     overflow: hidden;
     display: flex;
+    align-items: center;
     justify-content: center;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.5)); /* Soft fade */
   }
   
   .marquee {
@@ -21,9 +20,9 @@
     flex-direction: column;
     gap: var(--gap);
     align-items: center;
-    height: 100%;
+    height: 200%;
     justify-content: center;
-    position: relative;
+    position: absolute;
   }
   
   .marquee__group {
@@ -34,13 +33,19 @@
     animation: scroll-y var(--duration) linear infinite;
   }
   
-  /* Fading effect at the top and bottom */
+  .marquee-img {
+    width: var(--size);
+    height: auto;
+    opacity: 0.4; /* Reduce intensity */
+  }
+  
+  /* 🟢 Fade Effect on Top & Bottom */
   .marquee-background::before,
   .marquee-background::after {
     content: "";
     position: absolute;
     width: 100%;
-    height: 20%; /* Adjust height of fade effect */
+    height: 20%;
     left: 0;
     pointer-events: none;
   }
@@ -55,6 +60,7 @@
     background: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
   }
   
+  /* 🟢 Dark Mode Adjustments */
   .dark .marquee-background::before {
     background: linear-gradient(to bottom, rgba(24, 24, 24, 1), rgba(24, 24, 24, 0));
   }
@@ -63,13 +69,22 @@
     background: linear-gradient(to top, rgba(24, 24, 24, 1), rgba(24, 24, 24, 0));
   }
   
-  .marquee-img {
-    width: var(--size);
-    height: auto;
-  }
-  
   @keyframes scroll-y {
     from { transform: translateY(0); }
     to { transform: translateY(-100%); }
+  }
+  
+  /* 🟢 Main Section Overlay */
+  .main-section {
+    position: relative;
+    padding: 6rem 2rem;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+  
+  .dark .main-section {
+    background: rgba(24, 24, 24, 0.8);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
   }
   

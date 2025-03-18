@@ -10,8 +10,10 @@
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1; /* Move it to the background */
+    z-index: -1; /* Move to background */
     overflow: hidden;
+    display: flex;
+    justify-content: center;
   }
   
   .marquee {
@@ -21,7 +23,7 @@
     align-items: center;
     height: 100%;
     justify-content: center;
-    mask-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1) 20%, rgba(0,0,0,1) 80%, rgba(0,0,0,0));
+    position: relative;
   }
   
   .marquee__group {
@@ -30,6 +32,35 @@
     align-items: center;
     gap: var(--gap);
     animation: scroll-y var(--duration) linear infinite;
+  }
+  
+  /* Fading effect at the top and bottom */
+  .marquee-background::before,
+  .marquee-background::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 20%; /* Adjust height of fade effect */
+    left: 0;
+    pointer-events: none;
+  }
+  
+  .marquee-background::before {
+    top: 0;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+  }
+  
+  .marquee-background::after {
+    bottom: 0;
+    background: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+  }
+  
+  .dark .marquee-background::before {
+    background: linear-gradient(to bottom, rgba(24, 24, 24, 1), rgba(24, 24, 24, 0));
+  }
+  
+  .dark .marquee-background::after {
+    background: linear-gradient(to top, rgba(24, 24, 24, 1), rgba(24, 24, 24, 0));
   }
   
   .marquee-img {

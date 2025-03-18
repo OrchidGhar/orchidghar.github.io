@@ -7,6 +7,7 @@
     --duration: 60s;
     --scroll-start: 0;
     --scroll-end: calc(-100% - var(--gap));
+    --imgsize: 6rem;
   }
   
   @media (prefers-color-scheme: dark) {
@@ -184,7 +185,11 @@
   .toggle--vertical svg {
     transform: translate(-50%, -50%) rotate(-90deg);
   }
-  
+  .marquee-img {
+    width: var(--imgsize);
+    height: auto;
+    opacity: 0.4; /* Reduce intensity */
+  }
   @keyframes fade {
     to {
       opacity: 0;

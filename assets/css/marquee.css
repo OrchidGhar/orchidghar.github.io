@@ -33,7 +33,7 @@
     font-size: 1rem;
     line-height: 1.5;
     color: var(--color-text);
-    background-color: var(--color-bg);
+    /* background-color: var(--color-bg); */
   }
   
   .marquee {
@@ -103,7 +103,7 @@
   }
   
   /* Element styles */
-  .marquee svg {
+  .marquee img {
     display: grid;
     place-items: center;
     width: var(--size);
@@ -114,7 +114,7 @@
     border-radius: 0.5rem;
   }
   
-  .marquee--vertical svg {
+  .marquee--vertical img {
     aspect-ratio: 1;
     width: calc(var(--size) / 1.5);
     padding: calc(var(--size) / 6);

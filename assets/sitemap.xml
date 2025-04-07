@@ -8,7 +8,7 @@ permalink: /sitemap.xml
   {% for page in site.pages %}
     {% if page.sitemap != false and page.url != "/404.html" %}
     <url>
-      <loc>{{ base }}{{ page.url | replace: "index.html", "" | escape }}</loc>
+      <loc>{{ page.url | replace: "index.html", "" | escape }}</loc>
       {% if page.last_modified_at %}
         <lastmod>{{ page.last_modified_at | date_to_xmlschema }}</lastmod>
       {% elsif page.date %}
@@ -20,7 +20,7 @@ permalink: /sitemap.xml
   
   {% for post in site.posts %}
     <url>
-      <loc>{{ base }}{{ post.url | escape }}</loc>
+      <loc>{{ post.url | escape }}</loc>
       <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
     </url>
   {% endfor %}

@@ -4,7 +4,7 @@ description: Orchid Ghar is your premier destination for a wide variety of high-
 keywords: "flower grower,flower seller, orchid grower, orchid seller, orchid flowers, orchid delivery, flower delivery, exotic orchids, orchids India"
 author: "Pranay Rai"
 url: "https://orchidghar.github.io/"
-baseurl: "/orchidghar/" # optional, used for site deployed in a subdirectory
+baseurl: "https://orchidghar.github.io/orchidghar" # optional, used for site deployed in a subdirectory
 
 defaults:
   - scope:

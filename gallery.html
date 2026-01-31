@@ -3,27 +3,25 @@ layout: default
 title: "Gallery | Orchid Ghar"
 ---
 
-<section class="gallery bg-gray-100 md:py-20">
-  <div class="mt-16 sm:mt-20">
-    <div class="-my-4 flex flex-wrap justify-center gap-5 overflow-hidden py-4 sm:gap-8">
-
+<section class="gallery bg-gray-100 py-20">
+  <div class="mx-auto max-w-7xl px-4 sm:px-8 lg:px-12">
+    <div class="text-center mb-12">
+      <h1 class="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl mb-4">Our Flower Gallery</h1>
+      <p class="text-lg text-zinc-600">Explore our beautiful collection of orchids, chrysanthemums, and seasonal flowers</p>
+    </div>
+    
+    <div class="masonry-gallery">
       {% assign gallery_images = site.static_files | where_exp: "file", "file.path contains '/assets/images/'" %}
       {% for image in gallery_images %}
-      <div
-        class="relative aspect-9/10 w-40 flex-none overflow-hidden rounded-xl bg-zinc-100 sm:w-72 sm:rounded-2xl dark:bg-zinc-800 {% if forloop.index0 | modulo: 2 == 0 %}rotate-2{% else %}-rotate-2{% endif %} transform hover:rotate-0"
-      >
+      <div class="masonry-item shadow-lg hover:shadow-2xl transition-shadow duration-300">
         <img
           alt="Gallery Image {{ forloop.index }}"
           loading="lazy"
           decoding="async"
-          class="inset-0 h-full w-full object-cover"
           src="{{ image.path | relative_url }}"
-          style="color: transparent"
-          sizes="(min-width: 640px) 18rem, 11rem"
         />
       </div>
       {% endfor %}
-
     </div>
   </div>
 </section>

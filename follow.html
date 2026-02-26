@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Redirecting...</title>
+
+<script>
+(function() {
+
+    var pageId = "61553368700381";
+    var username = "pranay.camling.rai";
+
+    var appLink = "fb://page/" + pageId;
+    var webLink = "https://www.facebook.com/" + username + "?ref=qr";
+
+    var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+    function isMobile() {
+        return /android|iPad|iPhone|iPod/i.test(userAgent);
+    }
+
+    if (isMobile()) {
+        // Try opening Facebook app
+        window.location = appLink;
+
+        // Fallback to browser after delay
+        setTimeout(function() {
+            window.location = webLink;
+        }, 1500);
+
+    } else {
+        // Desktop → direct browser
+        window.location = webLink;
+    }
+
+})();
+</script>
+
+</head>
+<body>
+Redirecting...
+</body>
+</html>
